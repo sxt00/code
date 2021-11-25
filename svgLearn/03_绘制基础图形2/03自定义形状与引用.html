@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #miqi{
+            fill: orange;
+            transition: all 2s;
+            transform: rotate(0deg);
+            transform-origin: center;
+        }
+        #miqi:hover{
+            fill: orchid;
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <svg width='1200' height='1200'>
+
+                <!-- g 标签 形成一个块供引用 -->
+            <defs>
+                <g id="miqi"> 
+                <circle id="" cx = '100' cy='100' r='50' >
+                </circle>
+                <circle id="" cx = '500' cy='100' r='50' >
+                </circle>
+                <circle id="" cx = '300' cy='200' r='200' >
+                </circle>
+            </g>
+            </defs>    
+            
+            <use href='#miqi' x='0' y='400'>
+
+            </use>
+<!-- 复制出来的 形状 大小颜色都是根据上面的原来的改变的 -->
+        </svg>
+    </div>
+
+</body>
+</html>

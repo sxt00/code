@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .line{
+            stroke: aqua;
+            stroke-width:  5px;
+            transition: all 2s;
+            transform: rotate(20deg);
+            transform-origin: center;
+            animation: xuanzhuan 4s linear infinite;
+        }
+        @keyframes xuanzhuan {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        .line:hover {
+            stroke: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        line
+        折线
+        <svg width = '400' height = '400'>
+            <line x1 = '50' y1='50' x2 ='350' y2='350' class="line"></line>
+            
+            <polyline points="3,3 30,28 300,400 88,5" fill="none" style="stroke: black; stroke: width 5px;"></polyline>
+        </svg>
+    </div>
+    <div>
+        
+    </div>
+</body>
+</html>
